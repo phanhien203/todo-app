@@ -42,12 +42,21 @@ const reducers = (state = initialState, action) => {
         loading: false,
       };
     case types.CREATE_TODO_ITEM:
+      return {
+        ...state,
+        loading: true,
+      };
     case types.CREATE_TODO_SUCCESS:
       return {
         ...state,
         loading: false,
+        todoList: [...state.todoList, action.payload]
       };
     case types.CREATE_TODO_ERROR:
+      return {
+        ...state,
+        loading: false,
+      };
     case types.UPDATE_TODO_ITEM:
       return {
         ...state,

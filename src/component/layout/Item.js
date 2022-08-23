@@ -28,7 +28,7 @@ export default function Item(props) {
         />
         <Link
           to={`/todo/${item?.id}`}
-          style={{ color: "#fff" }}>
+          style={{ color: "#fff", width: "100%" }}>
           <li id={item?.id}>
             <p>{item?.title}</p>
             <div>{formatDate(item?.updatedAt)}</div>

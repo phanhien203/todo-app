@@ -47,6 +47,7 @@ export default function Home() {
       userID: 1
     }
     dispatch(createTodoItem(data));
+    setValue('')
   }
 
   const handleComplete = (id, isComplete) => {
@@ -65,10 +66,7 @@ export default function Home() {
         <h1>
           WORK TO-DOS
         </h1>
-        <h4>
-          Enter text into the input field to add items to your list
-        </h4>
-        <p className="user_manual1">Tick the check-box to mark it as complete</p>
+        <h4 className="user_manual1">Tick the check-box to mark it as complete</h4>
         <p className="user_manual2">Click the item to edit it</p>
       </section>
       <div className="container">
@@ -79,7 +77,7 @@ export default function Home() {
           placeholder="New todo ..."
         />
         <div className="items">
-          {todoList?.map((item, index) => {
+          { (todoList) && todoList?.map((item, index) => {
             if (item?.title.toUpperCase().indexOf(value.toUpperCase()) > -1) {
               return (
                 <Item
