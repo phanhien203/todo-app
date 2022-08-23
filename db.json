@@ -1,0 +1,56 @@
+{
+  "todos": [
+    {
+      "description": "Tỏ tình",
+      "isComplete": true,
+      "title": "Bài tập 1",
+      "userID": 1,
+      "createdAt": 1661279405123,
+      "updatedAt": 1661279473728,
+      "id": 1
+    },
+    {
+      "description": "Làm người yêu",
+      "isComplete": true,
+      "title": "Bài tập 2",
+      "userID": 1,
+      "createdAt": 1661279423209,
+      "updatedAt": 1661279475091,
+      "id": 2
+    },
+    {
+      "description": "Yêu thương nhau",
+      "isComplete": true,
+      "title": "Bài tập 3",
+      "userID": 1,
+      "createdAt": 1661279438833,
+      "updatedAt": 1661279476126,
+      "id": 3
+    },
+    {
+      "description": "Học cách chăm sóc",
+      "isComplete": true,
+      "title": "Bài tập 4",
+      "userID": 1,
+      "createdAt": 1661279456312,
+      "updatedAt": 1661279477378,
+      "id": 4
+    },
+    {
+      "description": "Cưới nhau",
+      "isComplete": false,
+      "title": "Bài tập n",
+      "userID": 1,
+      "createdAt": 1661279471370,
+      "updatedAt": 1661279471370,
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "name": "Test",
+      "email": "test@gmail.com",
+      "id": 1
+    }
+  ]
+}
